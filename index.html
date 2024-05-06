@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Air Conditioner Control</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Air Conditioner Control</h1>
+        <div class="theme-switch-container">
+            <span class="sun-icon">&#9728;</span>
+            <label class="theme-switch">
+                <input type="checkbox" id="theme-switch">
+                <span class="slider round"></span>
+            </label>
+            <span class="moon-icon">&#9790;</span>
+        </div>
+        <div class="progress-container">
+            <svg class="progress-circle" width="200" height="200">
+                <circle class="progress-ring" id="humidity-progress" stroke="#00796b" stroke-width="12" fill="transparent" r="80" cx="100" cy="100"/>
+                <text x="50%" y="50%" text-anchor="middle" alignment-baseline="middle" class="progress-text" id="humidity-text">Nem: 0%</text>
+            </svg>
+            <svg class="progress-circle" width="200" height="200">
+                <circle class="progress-ring" id="temperature-progress" stroke="#00796b" stroke-width="12" fill="transparent" r="80" cx="100" cy="100"/>
+                <text x="50%" y="50%" text-anchor="middle" alignment-baseline="middle" class="progress-text" id="temperature-text">Sıcaklık: 0°C</text>
+            </svg>
+        </div>
+        <div class="buttons">
+            <button id="temp-up">+</button>
+            <button id="temp-down">-</button>
+        </div>
+        <div class="buttons">
+            <button id="fan-speed">Fan Speed</button>
+            <button id="power">Power</button>
+        </div>
+    </div>
+
+    <script src="https://www.gstatic.com/firebasejs/9.0.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.0.0/firebase-database.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
