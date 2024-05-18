@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Air Conditioner Control</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
 </head>
 <body>
     <div class="container">
@@ -32,13 +34,18 @@
             <button id="temp-down">-</button>
         </div>
         <div class="buttons">
-            <button id="fan-speed">Fan Speed</button>
-            <button id="power">Power</button>
+            <button id="heatMode">Heat Mode</button>
+            <button id="coolMode">Cool Mode</button>
+            <!-- Yeni butonu buraya ekleyelim -->
+            <button id="onButton">Power On/Off</button>
         </div>
     </div>
 
     <script src="https://www.gstatic.com/firebasejs/9.0.0/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/9.0.0/firebase-database.js"></script>
     <script src="script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>
